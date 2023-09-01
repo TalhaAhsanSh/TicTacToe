@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tic_tac_toe"
+        android:textSize="50sp"
+        android:textColor="@color/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/title"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pll1"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/box">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/x"
+            android:textSize="50sp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/text"
+            android:id="@+id/X1"
+
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player1"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/X"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pll2"
+        android:layout_below="@id/title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/box"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/o"
+            android:textSize="50sp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/text"
+            android:id="@+id/O1"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player2"
+            android:textSize="20sp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/O"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pll1"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/text"
+        android:id="@+id/tellingTv"
+        />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tellingTv"
+        android:layout_marginTop="30dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:id="@+id/box"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/boxbackground">
+
+        <Button
+            android:id="@+id/tv1"
+            android:text=""
+            android:textColor="#e6c621"
+            android:textSize="70sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="100dp"
+            android:background="@drawable/boxbackground"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <Button
+            android:id="@+id/tv2"
+            android:text=""
+            android:textColor="#e6c621"
+            android:textSize="70sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="100dp"
+            android:background="@drawable/boxbackground"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <Button
+            android:id="@+id/tv3"
+            android:text=""
+            android:textColor="#e6c621"
+            android:textSize="70sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="100dp"
+            android:background="@drawable/boxbackground"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <Button
+            android:id="@+id/tv4"
+            android:text=""
+            android:textColor="#e6c621"
+            android:textSize="70sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="100dp"
+            android:background="@drawable/boxbackground"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/tv5"
+            android:text=""
+            android:textColor="#e6c621"
+            android:textSize="70sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="100dp"
+            android:background="@drawable/boxbackground"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/tv6"
+            android:text=""
+            android:textColor="#e6c621"
+            android:textSize="70sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/boxbackground"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <Button
+            android:id="@+id/tv7"
+            android:layout_width="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/boxbackground"
+            android:text=""
+            android:textColor="#e6c621"
+            android:textSize="70sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/tv8"
+            android:text=""
+            android:textColor="#e6c621"
+            android:textSize="70sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="100dp"
+            android:background="@drawable/boxbackground"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/tv9"
+            android:text=""
+            android:textColor="#e6c621"
+            android:textSize="70sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="100dp"
+            android:background="@drawable/boxbackground"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </GridLayout>
+
+
+</RelativeLayout>

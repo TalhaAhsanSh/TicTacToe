@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@color/background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tic_tac_toe"
+        android:id="@+id/homeTitle"
+        android:textColor="@color/text"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/xo"
+        android:textSize="70sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x_0"
+        android:textColor="@color/text"
+        android:id="@+id/xo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:textSize="150sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xo"
+        android:id="@+id/newBtn"
+        android:backgroundTint="@color/text"
+        android:text="@string/new_game"
+        android:textSize="40sp"
+        android:textColor="@color/background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>

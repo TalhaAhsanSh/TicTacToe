@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">tictactoe</string>
+    <string name="player2">player 2</string>
+    <string name="player1">Player 1</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="enter_player_name">Enter Players Name</string>
+    <string name="x">X</string>
+    <string name="player_1">Player 1</string>
+    <string name="enter_player_1_name">Enter Player 1 Name</string>
+    <string name="o">O</string>
+    <string name="enter_player_2_name">Enter Player 2 Name</string>
+    <string name="start_game">Start Game</string>
+    <string name="player_2">Player 2</string>
+    <string name="homebtn">go to home</string>
+    <string name="winner">Winner</string>
+    <string name="play_again">Play Again</string>
+    <string name="x_0">X 0</string>
+    <string name="new_game">New Game</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="developer">Develpoed By Migliorare Corporation</string>
+    <string name="logo">logo</string>
+</resources>

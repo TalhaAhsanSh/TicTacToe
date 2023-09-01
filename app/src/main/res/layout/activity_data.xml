@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".DataActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_player_name"
+        android:textSize="30sp"
+        android:id="@+id/dataTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player1tv"
+        android:layout_below="@id/dataTv"
+        android:text="@string/x"
+        android:textSize="40sp"
+        android:textColor="@color/text"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player1tv1"
+        android:layout_below="@id/dataTv"
+        android:layout_toEndOf="@id/player1tv"
+        android:text="@string/player_1"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="19dp"/>
+
+    <EditText
+        android:id="@+id/player1et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player1tv"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittextbox"
+        android:textColor="@color/background"
+        android:hint="@string/enter_player_1_name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:maxLength="10"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player2tv"
+        android:layout_below="@id/player1et"
+        android:text="@string/o"
+        android:textSize="40sp"
+        android:textColor="@color/text"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player2tv1"
+        android:layout_below="@id/player1et"
+        android:layout_toEndOf="@id/player2tv"
+        android:text="@string/player_2"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="19dp"/>
+
+    <EditText
+        android:id="@+id/player2et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player2tv"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittextbox"
+        android:hint="@string/enter_player_2_name"
+        android:importantForAutofill="no"
+        android:textColor="@color/background"
+        android:inputType="textPersonName"
+        android:maxLength="10"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_game"
+        android:textSize="30sp"
+        android:id="@+id/startbtn"
+        android:layout_below="@id/player2et"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="@color/text"
+        android:textColor="@color/background"/>
+
+
+</RelativeLayout>
